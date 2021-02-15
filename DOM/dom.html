@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore DOM</title>
+
+    <style>
+        .article {
+            border: 2px solid tomato;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h3> Exploring DOM </h3>
+            <article id="first-article">
+                <h3> Article-1 </h3>
+                <p class="author"> Author-1</p>
+                <p class="description"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga dicta maiores, quaerat esse suscipit enim. Perspiciatis laudantium impedit nemo atque cumque ratione itaque? Temporibus eum optio dolore consequatur eveniet sunt. </p>
+            </article>
+
+            <article class="article">
+                <h3> Article-2 </h3>
+                <p class="author"> Author-2</p>
+                <p class="description"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga dicta maiores, quaerat esse suscipit enim. Perspiciatis laudantium impedit nemo atque cumque ratione itaque? Temporibus eum optio dolore consequatur eveniet sunt. </p>
+            </article>
+
+            <article class="article">
+                <h3> Article-3 </h3>
+                <p class="author"> Author-3</p>
+                <p class="description"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga dicta maiores, quaerat esse suscipit enim. Perspiciatis laudantium impedit nemo atque cumque ratione itaque? Temporibus eum optio dolore consequatur eveniet sunt. </p>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        const article = document.getElementById('first-article');
+        const newPara = document.createElement('p');
+        newPara.innerHTML = 'This is added by JS';
+        article.appendChild(newPara);
+    </script>
+
+</body>
+
+</html>

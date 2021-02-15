@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Company</title>
+</head>
+
+<body>
+    <h1 id="propose"> TAJUL ISLAM</h1>
+
+    <button onclick="dateWithTime()">Date & Time</button><br> <br>
+
+    <button id="second">PROPOSE</button> <br><br>
+    <button id="guilty">GUILTY</button><br><br>
+    <button id="last">BUDGET</button><br>
+
+
+    <script>
+        //Button 1
+        function dateWithTime() {
+            alert(new Date());
+        }
+
+        //Button 2
+        const button2 = document.getElementById('second');
+        button2.onclick = function() {
+                console.log('I LOVE YOU');
+            }
+            //Button 3
+        function colour() {
+            document.body.style.backgroundColor = 'red';
+        }
+        const button3 = document.getElementById('guilty');
+        // button3.addEventListener('dblclick', colour);
+        // button3.onclick = colour;
+
+        document.getElementById('last').addEventListener('click', function() {
+            document.body.style.color = 'tomato';
+        })
+    </script>
+</body>
+
+</html>
