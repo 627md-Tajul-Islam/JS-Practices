@@ -1,1 +1,1 @@
-# JS-Practices
+Basic Javascript Practice
